@@ -1,0 +1,412 @@
+{
+  "window": {
+    "since": "2026-07-07",
+    "until": "2026-10-22"
+  },
+  "sessions": 1906,
+  "tool_calls": 88521,
+  "hard_failures": 3329,
+  "failure_rate_pct": 3.76,
+  "taxonomy": [
+    {
+      "category": "unclassified",
+      "count": 716,
+      "share_pct": 21.5
+    },
+    {
+      "category": "nonzero_exit",
+      "count": 684,
+      "share_pct": 20.5
+    },
+    {
+      "category": "harness_policy_block",
+      "count": 312,
+      "share_pct": 9.4
+    },
+    {
+      "category": "syntax_runtime",
+      "count": 271,
+      "share_pct": 8.1
+    },
+    {
+      "category": "file_not_found",
+      "count": 253,
+      "share_pct": 7.6
+    },
+    {
+      "category": "timeout",
+      "count": 238,
+      "share_pct": 7.1
+    },
+    {
+      "category": "missing_precondition",
+      "count": 160,
+      "share_pct": 4.8
+    },
+    {
+      "category": "network_auth",
+      "count": 141,
+      "share_pct": 4.2
+    },
+    {
+      "category": "stale_edit_context",
+      "count": 122,
+      "share_pct": 3.7
+    },
+    {
+      "category": "browser_focus_lost",
+      "count": 121,
+      "share_pct": 3.6
+    },
+    {
+      "category": "invalid_tool_input",
+      "count": 110,
+      "share_pct": 3.3
+    },
+    {
+      "category": "context_budget_exceeded",
+      "count": 98,
+      "share_pct": 2.9
+    },
+    {
+      "category": "permission_denied",
+      "count": 39,
+      "share_pct": 1.2
+    },
+    {
+      "category": "command_not_found",
+      "count": 37,
+      "share_pct": 1.1
+    },
+    {
+      "category": "test_build_fail",
+      "count": 15,
+      "share_pct": 0.5
+    },
+    {
+      "category": "disk_full",
+      "count": 12,
+      "share_pct": 0.4
+    }
+  ],
+  "per_tool": [
+    {
+      "tool": "browser:find",
+      "calls": 632,
+      "failures": 120,
+      "rate_pct": 18.99
+    },
+    {
+      "tool": "browser:file_upload",
+      "calls": 231,
+      "failures": 19,
+      "rate_pct": 8.23
+    },
+    {
+      "tool": "browser:navigate",
+      "calls": 1132,
+      "failures": 90,
+      "rate_pct": 7.95
+    },
+    {
+      "tool": "browser:browser_batch",
+      "calls": 5501,
+      "failures": 372,
+      "rate_pct": 6.76
+    },
+    {
+      "tool": "browser:get_page_text",
+      "calls": 422,
+      "failures": 26,
+      "rate_pct": 6.16
+    },
+    {
+      "tool": "Edit",
+      "calls": 3334,
+      "failures": 191,
+      "rate_pct": 5.73
+    },
+    {
+      "tool": "browser:javascript_tool",
+      "calls": 3816,
+      "failures": 209,
+      "rate_pct": 5.48
+    },
+    {
+      "tool": "browser:computer",
+      "calls": 4462,
+      "failures": 213,
+      "rate_pct": 4.77
+    },
+    {
+      "tool": "mcp (other)",
+      "calls": 1239,
+      "failures": 53,
+      "rate_pct": 4.28
+    },
+    {
+      "tool": "Bash",
+      "calls": 40527,
+      "failures": 1487,
+      "rate_pct": 3.67
+    },
+    {
+      "tool": "browser:tabs_create_mcp",
+      "calls": 205,
+      "failures": 6,
+      "rate_pct": 2.93
+    },
+    {
+      "tool": "WebFetch",
+      "calls": 2679,
+      "failures": 63,
+      "rate_pct": 2.35
+    },
+    {
+      "tool": "Agent",
+      "calls": 2135,
+      "failures": 49,
+      "rate_pct": 2.3
+    },
+    {
+      "tool": "Write",
+      "calls": 2319,
+      "failures": 53,
+      "rate_pct": 2.29
+    },
+    {
+      "tool": "browser:read_page",
+      "calls": 401,
+      "failures": 7,
+      "rate_pct": 1.75
+    },
+    {
+      "tool": "Read",
+      "calls": 13048,
+      "failures": 203,
+      "rate_pct": 1.56
+    },
+    {
+      "tool": "SendUserFile",
+      "calls": 470,
+      "failures": 6,
+      "rate_pct": 1.28
+    },
+    {
+      "tool": "Skill",
+      "calls": 261,
+      "failures": 3,
+      "rate_pct": 1.15
+    },
+    {
+      "tool": "browser:tabs_context_mcp",
+      "calls": 408,
+      "failures": 3,
+      "rate_pct": 0.74
+    },
+    {
+      "tool": "WebSearch",
+      "calls": 2073,
+      "failures": 14,
+      "rate_pct": 0.68
+    },
+    {
+      "tool": "SendMessage",
+      "calls": 608,
+      "failures": 1,
+      "rate_pct": 0.16
+    },
+    {
+      "tool": "ToolSearch",
+      "calls": 864,
+      "failures": 0,
+      "rate_pct": 0.0
+    }
+  ],
+  "top_signatures": {
+    "context_budget_exceeded": [
+      [
+        "File content (N.NKB) exceeds maximum allowed size (NKB). Use offset and limit parameters t",
+        70
+      ]
+    ],
+    "harness_policy_block": [
+      [
+        "BLOCKED by HOOK (user-defined hook message removed)",
+        45
+      ],
+      [
+        "PreToolUse hook did not respond before its timeout (host client may be unreachable). The t",
+        42
+      ],
+      [
+        "Concurrent subagent limit reached. You can run N subagents at once. Do not retry. If the u",
+        37
+      ],
+      [
+        "Permission for this action was denied by the Claude Code auto mode classifier. Reason: Blo",
+        26
+      ],
+      [
+        "Blocked: sleep N followed by: cat PATH To wait for a condition, use Monitor with an until-",
+        12
+      ]
+    ],
+    "nonzero_exit": [],
+    "file_not_found": [
+      [
+        "File does not exist. Note: your current working directory is PATH",
+        49
+      ],
+      [
+        "Exit code N Traceback (most recent call last): File \" \", line N, in FileNotFoundError: [Er",
+        17
+      ],
+      [
+        "Exit code N ls: PATH No such file or directory",
+        8
+      ],
+      [
+        "File does not exist. Note: your current working directory is PATH Did you mean FILE?",
+        7
+      ],
+      [
+        "The MCP server returned HTTP N for this tool call. Server error detail: Invalid JSON paylo",
+        6
+      ]
+    ],
+    "permission_denied": [
+      [
+        "The user doesn't want to proceed with this tool use. The tool use was rejected (eg. if it ",
+        30
+      ]
+    ],
+    "stale_edit_context": [
+      [
+        "File has not been read yet. Read it first before writing to it.",
+        95
+      ],
+      [
+        "File has been modified since read, either by the user or by a linter. Read it again before",
+        17
+      ]
+    ],
+    "timeout": [
+      [
+        "Exit code N Command timed out after Nm Ns",
+        45
+      ],
+      [
+        "computer timed out after Ns. The Browser pane may be stuck (modal dialog, navigation hang,",
+        33
+      ],
+      [
+        "Failed to execute JavaScript: CDP sendCommand \"Runtime.evaluate\" timed out after Nms on ta",
+        32
+      ],
+      [
+        "timeout of Nms exceeded",
+        12
+      ],
+      [
+        "computer timed out after Ns. The Browser pane is currently hidden. The pane may be stuck (",
+        10
+      ]
+    ],
+    "disk_full": [
+      [
+        "ENOSPC: no space left on device, open 'PATH'",
+        9
+      ]
+    ],
+    "syntax_runtime": [],
+    "invalid_tool_input": [
+      [
+        "MCP error -N: Input validation error: Invalid arguments for tool computer: [ { \"origin\": \"",
+        14
+      ],
+      [
+        "MCP error -N: Input validation error: Invalid arguments for tool computer: [ { \"expected\":",
+        13
+      ],
+      [
+        "InputValidationError: Read was called with input that could not be parsed as JSON. You sen",
+        13
+      ],
+      [
+        "MCP error -N: Input validation error: Invalid arguments for tool navigate: [ { \"expected\":",
+        11
+      ],
+      [
+        "InputValidationError: WebSearch was called with input that could not be parsed as JSON. Yo",
+        7
+      ]
+    ],
+    "missing_precondition": [
+      [
+        "no read_page tree cached; call read_page first",
+        61
+      ],
+      [
+        "Tab ID is not in Claude's tab group for this session. Tools can only target tabs inside th",
+        45
+      ],
+      [
+        "Tab ID no longer exists. Call tabs_context_mcp to get current tabs.",
+        20
+      ],
+      [
+        "No site is open in this tab. Use `navigate` first.",
+        16
+      ],
+      [
+        "ref map not initialized; call read_page first",
+        7
+      ]
+    ],
+    "unclassified": [],
+    "command_not_found": [
+      [
+        "Exit code N Traceback (most recent call last): File \" \", line N, in ModuleNotFoundError: N",
+        8
+      ],
+      [
+        "Exit code N (eval):N: command not found: timeout",
+        5
+      ]
+    ],
+    "network_auth": [
+      [
+        "navigation to URL was denied or failed",
+        23
+      ],
+      [
+        "Error: net::ERR_FAILED",
+        9
+      ]
+    ],
+    "test_build_fail": [],
+    "browser_focus_lost": [
+      [
+        "Failed to execute JavaScript: Cannot access a chrome-extension:PATH URL of different exten",
+        28
+      ],
+      [
+        "Error capturing screenshot: Cannot access a chrome-extension:PATH URL of different extensi",
+        26
+      ],
+      [
+        "actions[N] (computer:left_click) failed: Error clicking: Cannot access a chrome-extension:",
+        13
+      ],
+      [
+        "Error clicking: Cannot access a chrome-extension:PATH URL of different extension",
+        8
+      ],
+      [
+        "actions[N] (computer:screenshot) failed: Error capturing screenshot: Cannot access a chrom",
+        7
+      ]
+    ]
+  }
+}
